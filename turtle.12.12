@@ -1,0 +1,42 @@
+import turtle
+
+def circle(R):
+	turtle.speed(5)
+	for i in range(500):
+		turtle.forward(2*3.14*R/500)
+		turtle.left(360/500)
+
+
+turtle.speed(5)
+circle(100)
+turtle.penup()
+turtle.left(90)
+turtle.forward(170)
+turtle.left(90)
+turtle.forward(50)
+turtle.pendown()
+circle(20)
+turtle.penup()
+turtle.left(180)
+turtle.forward(100)
+turtle.left(180)
+turtle.pendown()
+circle(20)
+turtle.penup()
+turtle.forward(50)
+turtle.left(90)
+turtle.forward(70)
+turtle.pendown()
+turtle.forward(30)
+turtle.penup()
+turtle.left(90)
+turtle.forward(55)
+turtle.right(90)
+turtle.pendown()
+for i in range(180):
+    turtle.forward(1)
+    turtle.right(1)
+input()
+
+
+

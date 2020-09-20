@@ -1,0 +1,21 @@
+import turtle
+import numpy as np
+
+def polygon(R, n):
+	turtle.right(90*(n-2)/n)
+	for i in range(n):
+		turtle.forward(2*R*np.sin(np.pi/n))
+		turtle.left(360/n)
+	turtle.right(360/n)
+	turtle.right(90*(n-2)/n)
+	turtle.penup()
+	turtle.forward(20)
+	turtle.pendown()
+	turtle.right(180)
+
+turtle.shape('turtle')
+turtle.speed(1)
+for i in range(10):
+	polygon(20+(i+1)*20,i+3)
+input()
+

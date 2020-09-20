@@ -1,0 +1,15 @@
+import turtle
+
+def stars(n):
+    turtle.left(180 - (180 / n))
+    turtle.forward(200)
+
+for i in range(7):
+    stars(7)
+turtle.penup()
+turtle.forward(300)
+turtle.pendown()
+for i in range(11):
+    stars(11)
+    
+turtle.done()

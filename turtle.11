@@ -1,0 +1,16 @@
+import turtle 
+
+def circle(R):
+	for i in range(500):
+		turtle.forward(2*3.14*R/500)
+		turtle.left(360/500)
+
+turtle.shape('turtle')
+turtle.left(90)
+turtle.speed(5)
+for i in range(10):
+	circle(30+10*i)
+	turtle.right(180)
+	circle(30+10*i)
+	turtle.right(180)
+input()
